@@ -188,23 +188,23 @@ Each case study follows this format:
 
 ### Tasks
 
-- [ ] Update LinkedIn Profile Summary
-  - [ ] Add link to portfolio repository in "About" section
-  - [ ] Include 1-2 sentences highlighting technical + business capabilities
+- [x] Update LinkedIn Profile Summary
+  - [x] Add link to portfolio repository in "About" section
+  - [x] Include 1-2 sentences highlighting technical + business capabilities
   - [ ] Reference specific frameworks/methodologies (with GitHub links)
 
-- [ ] Enhance LinkedIn Experience Entries
-  - [ ] Add GitHub repo links to relevant job experiences
-  - [ ] Include brief mention of technical contributions
+- [x] Enhance LinkedIn Experience Entries
+  - [x] Add GitHub repo links to relevant job experiences
+  - [x] Include brief mention of technical contributions
 
-- [ ] Update LinkedIn Skills Section
-  - [ ] Add/endorse technical skills visible in GitHub (Appium, TestNG, Docker)
-  - [ ] Add/endorse SE skills (Solution Design, Technical Sales, POC Management)
+- [x] Update LinkedIn Skills Section
+  - [x] Add/endorse technical skills visible in GitHub (Appium, TestNG, Docker)
+  - [x] Add/endorse SE skills (Solution Design, Technical Sales, POC Management)
 
-- [ ] Consider LinkedIn Featured Section
-  - [ ] Add portfolio repository as featured item
+- [x] Consider LinkedIn Featured Section
+  - [x] Add portfolio repository as featured item
   - [ ] Add case study documents as featured items
-  - [ ] Reorder to highlight most relevant content first
+  - [x] Reorder to highlight most relevant content first
 
 - [ ] Optional: LinkedIn Activity
   - [ ] Short post announcing portfolio launch
