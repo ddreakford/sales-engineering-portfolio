@@ -16,7 +16,7 @@ This plan was executed collaboratively between Dwayne and Claude Code. The workf
 This iterative approach was particularly important for:
 
 - **Impact statements** — Claude's initial draft was technically grounded but needed Dwayne's edits to capture the right SE perspective (e.g., reframing "test automation framework" as "containerized testing environment," emphasizing the distinction between providing containerization vs. writing all test scenarios, adding the personal voice and sales context)
-- **README SE sections** — Claude drafted the Business Context / Why This Matters sections; Dwayne's edits sharpened the problem framing, adjusted use case descriptions and added personality (the "strain their sanity (lol)" note in the Appium README, for instance)
+- **SE-README.md content** — Claude drafted the Business Context / Why This Matters sections (initially added to project READMEs, later separated into dedicated `SE-README.md` files); Dwayne's edits sharpened the problem framing, adjusted use case descriptions and added personality (the "strain their sanity (lol)" note, for instance)
 - **Case study narratives** — Claude drafted complete case studies using the template structure; Dwayne's edits added critical context (the security case study's executive summary was substantially rewritten to include the personal narrative of taking a 201-level course, the testing case study added the clarifying note about providing containerization on top of existing community code)
 
 **Key editorial patterns Dwayne established:**
@@ -63,36 +63,39 @@ This iterative approach was particularly important for:
 
 ---
 
-## Phase 2: Enhance Existing Repository READMEs ✅
-**Objective:** Transform technical READMEs into sales engineering showcases
+## Phase 2: Enhance Existing Repositories with SE Content ✅
+**Objective:** Add sales engineering context to project repositories
+
+*Initially, SE sections were added directly to each project's README. Before launch (v1.1), these were separated into dedicated `SE-README.md` files so that project READMEs remain purely technical and SE content lives in its own document. Each README now includes a one-line pointer to its SE-README.md.*
 
 ### Repository 1: CommunityCode-AppiumCodeExamples ✅
 
-- [x] Added "Business Context" section to README
-  - "Why This Exists" narrative + "Sales Engineering Value" bullets
+- [x] Created SE content (now in `SE-README.md`)
+  - "Business Context" with "Why This Exists" narrative + "Sales Engineering Value" bullets
   - Claude drafted; **Dwayne edited** problem framing, added emphasis on days of lost SE cycles, and refined the containerization value proposition
-- [x] Created "Use Cases" section
+- [x] Created "Use Cases" section (now in `SE-README.md`)
   - 2 anonymized scenarios (Compelling Demo/Evaluation, Onboarding SEs)
   - Challenge → Solution → Outcome format
   - **Dwayne edited** to add personality and specificity (evaluation window timing, "strain their sanity (lol)")
-- [x] Added "Skills Demonstrated" table (Technical / Business / Tools)
+- [x] Separated SE content into `SE-README.md`; restored README to technical-only with pointer
 - [ ] Visual elements (architecture diagrams, screenshots) — deferred to future iteration
 
-**Deliverable:** Enhanced README showing SE thinking, not just code
+**Deliverable:** SE-README.md showing SE thinking + technical README focused on the code
 
 ### Repository 2: mobile-app-assessment ✅
 
-- [x] Added "Why This Matters in Sales Engineering" section
-  - Problem/Solution/SE Value structure
+- [x] Created SE content (now in `SE-README.md`)
+  - "Why This Matters in Sales Engineering" — Problem/Solution/SE Value structure
   - **Dwayne edited** problem statement to frame from solution provider perspective
-- [x] Added "How This Supports the Sales Cycle" table
+- [x] Created "How This Supports the Sales Cycle" table (now in `SE-README.md`)
   - Maps assessment value to each sales stage (Discovery → Post-Sale)
   - **Dwayne edited** to sharpen the value descriptions (e.g., "foundational input for the business case" in POC stage)
-- [x] Added "Skills Demonstrated" table (Technical / Business / Tools & Standards)
+- [x] Created "Skills Demonstrated" table (now in `SE-README.md`)
   - **Dwayne edited** to add "Comprehensive examination" and reorder rows
+- [x] Separated SE content into `SE-README.md`; restored README to technical-only with pointer
 - [ ] Visual elements — deferred to future iteration
 
-**Deliverable:** Security assessment repo positioned as SE differentiator
+**Deliverable:** SE-README.md positioning security assessment as SE differentiator + technical README focused on the methodology
 
 ---
 
@@ -235,28 +238,29 @@ Each case study follows this format:
 
 ---
 
-## Phase 7: Launch & Iterate
+## Phase 7: Launch & Iterate ✅ (partially)
 **Objective:** Publish and maintain portfolio
 
-### Tasks
+### Completed
 
-- [ ] Commit and push all portfolio content
-  - [ ] Stage and commit portfolio files
-  - [ ] Push to remote
-  - [ ] Tag release (v1.0)
-  - [ ] Update repository description and topics on GitHub
+- [x] Commit and push all portfolio content
+  - [x] Stage and commit portfolio files (9 files, 863 lines)
+  - [x] Push to remote
+  - [x] Tag release v1.0
+  - [x] Update repository description and topics on GitHub
 
-- [ ] Add repository topics/tags
-  - sales-engineering
-  - test-automation
-  - appium
-  - mobile-testing
-  - portfolio
-  - security-assessment
+- [x] Add repository topics/tags
+  - sales-engineering, test-automation, appium, mobile-testing, portfolio, security-assessment
 
-- [ ] Commit and push enhanced READMEs to existing repos
-  - [ ] `CommunityCode-AppiumCodeExamples` — push updated README
-  - [ ] `mobile-app-assessment` — push updated README
+- [x] Commit and push SE content to existing repos
+  - [x] `CommunityCode-AppiumCodeExamples` — SE-README.md created, README restored to technical-only
+  - [x] `mobile-app-assessment` — SE-README.md created, README restored to technical-only
+
+- [x] Tag release v1.1 (SE-README separation)
+  - [x] Portfolio README updated with SE Perspective + Technical README links per project
+  - [x] All three repos committed and pushed
+
+### Remaining
 
 - [ ] Share portfolio
   - [ ] Update LinkedIn with all links (Phase 5)
@@ -300,12 +304,14 @@ Track these indicators to measure portfolio effectiveness:
 
 ### Process for Adding Future Content
 
-1. **New case study:**
-   - Copy `case-studies/template.md` to a new file
-   - Have Claude draft content based on repo analysis
-   - Edit to match voice/tone established in existing case studies (see editorial patterns above)
+1. **New project:**
+   - Create `SE-README.md` in the project repo with business context, SE value and use cases
+   - Add a pointer in the project's technical README: *"For the Sales Engineering perspective... see [SE-README.md](SE-README.md)."*
+   - Copy `case-studies/template.md` to a new file in the portfolio repo
+   - Have Claude draft case study and SE-README content based on repo analysis
+   - Edit to match voice/tone established in existing content (see editorial patterns above)
    - Add impact statements to `impact-statements.md`
-   - Update portfolio README with project summary and case study link
+   - Update portfolio README with project summary, SE Perspective link, Technical README link and case study link
    - Update `skills-matrix.md` with new skills/evidence
 
 2. **New impact statements:**
@@ -316,5 +322,5 @@ Track these indicators to measure portfolio effectiveness:
 ---
 
 **Created:** 2026-02-12
-**Last Updated:** 2026-02-12
-**Status:** ~~Planning~~ → ~~In Progress~~ → Review → Complete
+**Last Updated:** 2026-02-14
+**Status:** ~~Planning~~ → ~~In Progress~~ → ~~Review~~ → Complete (Phase 5 remaining)
