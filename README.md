@@ -16,7 +16,7 @@ This portfolio connects technical projects to the business outcomes they enable.
 - **Clarify how you, in differentiated fashion, provide a solution** that meets the requirements
 - **Prove the viability of the business case** as it pertains to the solution to be provided
 
-**The projects below were built to make SEs more effective in clarifying the practical value and proving the viability of the business case.** 
+The projects below were built to make SEs more effective in clarifying the practical value and proving the viability of the business case.
 
 Few things inspire confidence like tangeable examples. These projects provide tangeable examples.
 
@@ -25,7 +25,7 @@ Few things inspire confidence like tangeable examples. These projects provide ta
 ## Projects
 
 ### Containerized Appium Testing Environment
-**Repo:** [CommunityCode-AppiumCodeExamples](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples)
+**Repo:** [CommunityCode-AppiumCodeExamples](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) · [SE Perspective](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples/blob/master/SE-README.md) · [Technical README](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples/blob/master/README.md)
 
 A reusable, containerized testing environment to simplify running tests on mobile devices in the Digital.ai Testing Cloud. Built to eliminate the days of setup that SEs typically burn before they can demonstrate platform value.
 
@@ -44,7 +44,7 @@ A reusable, containerized testing environment to simplify running tests on mobil
 ---
 
 ### Mobile Application Security Assessment Framework
-**Repo:** [mobile-app-assessment](https://github.com/ddreakford/mobile-app-assessment)
+**Repo:** [mobile-app-assessment](https://github.com/ddreakford/mobile-app-assessment) · [SE Perspective](https://github.com/ddreakford/mobile-app-assessment/blob/main/SE-README.md) · [Technical README](https://github.com/ddreakford/mobile-app-assessment/blob/main/README.md)
 
 A toolkit to conduct mobile security assessments aligned to OWASP MASVS v2.0. Built to enable SEs who are not security SMEs to facilitate credible security conversations with CISOs and application security teams.
 
