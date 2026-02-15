@@ -108,9 +108,10 @@ sales-engineering-portfolio/
 
 ## Get in Touch
 
-I'm open to conversations about Sales Engineering roles where technical depth and business impact are equally and highly valued.
+I'm open to conversations about Sales Engineering, where technical depth and business impact are equally and highly valued.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ddreakford/) &nbsp; [![GitHub](https://img.shields.io/badge/GitHub-ddreakford-333?style=flat&logo=github)](https://github.com/ddreakford)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dwaynedreakford/) &nbsp; 
+[![GitHub](https://img.shields.io/badge/GitHub-ddreakford-333?style=flat&logo=github)](https://github.com/ddreakford)
 
 ---
 
