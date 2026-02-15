@@ -2,7 +2,7 @@
 
 **Dwayne Dreakford** | Principal Sales Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ddreakford/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/dwaynedreakford/)
 [![GitHub](https://img.shields.io/badge/GitHub-ddreakford-333?style=flat&logo=github)](https://github.com/ddreakford)
 
 ---
