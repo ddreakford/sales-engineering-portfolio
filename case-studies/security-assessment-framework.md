@@ -74,7 +74,7 @@ Each of the four RESILIENCE controls gets an enhanced guide (1,200-1,700 lines e
 - **MASVS-RESILIENCE focus.** While the framework covers all 20 OWASP MASVS controls at a high level, the deep-dive guides focus on the four RESILIENCE controls. These are the controls most relevant to the conversations SEs were having — and the ones most likely to yield actionable, differentiating findings.
 - **Built-in sanitization.** A sanitization script (`sanitize_guides.py`) and comprehensive `.gitignore` ensure that assessment artifacts (actual APKs, decompiled code, client-specific findings) never leak into the public template.
 
-**Repo:** [mobile-app-assessment](https://github.com/ddreakford/mobile-app-assessment?tab=readme-ov-file#mobile-security-assessment-exemplar)
+**Repo:** `mobile-app-assessment` [***unavailable / removed***]
 
 ---
 
