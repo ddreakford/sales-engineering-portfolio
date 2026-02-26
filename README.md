@@ -44,7 +44,7 @@ A reusable, containerized testing environment to simplify running tests on mobil
 ---
 
 ### Mobile Application Security Assessment Framework
-**Repo:** [mobile-app-assessment](https://github.com/ddreakford/mobile-app-assessment) · [SE Perspective](https://github.com/ddreakford/mobile-app-assessment/blob/main/SE-README.md) · [Technical README](https://github.com/ddreakford/mobile-app-assessment/blob/main/README.md)
+**Repo:** `mobile-app-assessment` [***unavailable / removed***]
 
 A toolkit to conduct mobile security assessments aligned to OWASP MASVS v2.0. Built to enable SEs who are not security SMEs to facilitate credible security conversations with CISOs and application security teams.
 
