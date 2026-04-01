@@ -9,7 +9,7 @@
 
 ## What You'll Find Here
 
-This portfolio connects technical projects to the business outcomes they enable. It's indicative of how I approach the role of the technical seller within the wider context of the sales cycle: 
+This portfolio connects technical projects to the business outcomes they enable. It's indicative of how I approach the technical seller's role within the wider context of the sales cycle: 
 
 - **Understand the domain and challenges** to maximizing business value
 - **Identify key requirements and practical value** of addressing the challenges
@@ -18,7 +18,7 @@ This portfolio connects technical projects to the business outcomes they enable.
 
 The projects below were built to make SEs more effective in clarifying the practical value and proving the viability of the business case.
 
-Few things inspire confidence like tangeable examples. These projects provide tangeable examples.
+Few things inspire confidence like tangeable examples.
 
 ---
 
@@ -43,22 +43,22 @@ A reusable, containerized testing environment to simplify running tests on mobil
 
 ---
 
-### Multi Test Type Demo
+### Multi Test Type Demo Sandbox
 **Repo:** [test-automation-demo](https://github.com/ddreakford/test-automation-demo) · [Setup Guide](https://github.com/ddreakford/test-automation-demo/blob/main/docs/TestAutomationDemo_SetupGuide.md) · [Technical README](https://github.com/ddreakford/test-automation-demo/blob/main/README.md)
 
-Automated and manual tests targeting a Docker-based hotel booking platform, demonstrating how a mature test automation practice covers the full testing stack — API, UI, reporting and CI — in a single, reproducible project.
+Automated and manual tests targeting a hotel booking system. Automated and manual tests are included to validate the target system UI and API. Consumable reporting is provided via Allure Framework. Instructions and examples are provided for local setup as well plugging the automated tests into a CI pipeline.
 
-- **23 automated tests** spanning API (RestAssured) and UI (Selenium WebDriver) layers, organized into auth, CRUD, regression and admin login suites
+- **23 automated tests** spanning API (via **RestAssured**) and UI (via **Selenium WebDriver**) layers, organized into auth, CRUD and functional regression suites
 - **Allure reporting** with rich dashboards, step-level detail and historical trend tracking
-- **Root cause analysis demo** — two intentional test failures illustrate RCA methodology using the Allure dashboard
-- **Manual test tutorial** with step-by-step scenarios and Selenium-captured reference screenshots for manual testers
-- **GitHub Actions CI pipeline** — every push runs the full suite, executes the RCA demo and uploads the Allure report as a downloadable artifact
+- **Root cause analysis** — two intentional test failures illustrate RCA methodology using the Allure dashboard
+- **Manual testing tutorial** with step-by-step scenarios and Selenium-captured reference screenshots for manual testers
+- **GitHub Actions CI** — every push runs the full suite, executes the RCA demo and makes the Allure report available as a downloadable artifact
 
-**SE Impact:** Provides a ready-made, end-to-end reference implementation that demonstrates test automation maturity across the testing pyramid. Including API contract validation, UI regression, professional reporting and CI integration — in a single walkthrough.
+**SE Impact:** Provides a ready-made, end-to-end reference implementation to explore and  demonstrate multiple types and aspects of testing, including API contract validation, UI regression, manual testing, reporting and CI integration — in a cloneable, containerized setup.
 
-**Case Study:** [Test Automation Demo Impact](case-studies/test-automation-demo-impact.md)
+**Case Study:** [Multi Test Type Demo Sandbox](case-studies/test-automation-demo-impact.md)
 
-**Tech:** Java, Gradle, RestAssured, Selenium WebDriver, TestNG, Allure Report, Docker, Docker Compose, GitHub Actions
+**Tech:** Java, Gradle, RestAssured, Selenium WebDriver, TestNG, Allure Report, Docker, GitHub Actions
 
 ---
 

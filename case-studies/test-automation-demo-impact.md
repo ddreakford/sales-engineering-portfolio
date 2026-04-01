@@ -1,32 +1,32 @@
-# Case Study: Full-Stack Test Automation Demo
+# Case Study: Multi Test Type Demo Sandbox
 
 ## Executive Summary
 
-Prospects evaluating test automation platforms often struggle to envision what a mature, well-structured test automation practice looks like across the full testing stack. I built a multi-service test automation framework — covering API testing, UI testing, professional reporting and CI/CD — against a Docker-based hotel booking application. The project serves as a concrete, end-to-end reference implementation that SEs can walk through during evaluations to show how the pieces fit together, from API contract validation through UI regression to Allure dashboards and GitHub Actions pipelines.
+Given a particular testing solution, in can be challenging to envision how, in practice, various testing types and techniques are facilitated to provide practical value. With the practical value clarified, a viable business case can be constructed and ROI measured. This project serves as an adaptable reference implementation of automated and manual testing of a hotel booking system. The test types/focuses include UI, API, automated and manual tests. The automated tests are runnable locally via CLI and via GitHub Actions to demonstrate CI integration.
 
 ---
 
 ## Context
 
-Selling test automation platforms and services requires more than describing features. Prospects — especially QA leads and engineering managers evaluating solutions — want to see how automated testing works in practice across their stack. They want to understand how API and UI tests coexist, how results are reported, how failures are investigated, and how everything ties into CI/CD.
-
-The challenge is that most demo environments show isolated capabilities: an API test here, a UI test there, a screenshot of a report. Prospects are left to assemble the full picture in their heads. For teams early in their test automation journey, this gap between "feature demo" and "what our practice would look like" can stall evaluation progress.
+Prospective customers — *especially QA leads and engineering managers* — want to clarify how  testing solutions will work in practice. Depending on "where a team is", testing practice maturity wise, it's super valuable to help them envision how the various test types and emphases come together in context of their delivery processes. Of particular importance are how results are reported, failures investigated and root-cause analysis facilitated, as these are where most team members reap the value on daily basis.
 
 ---
 
 ## Challenge
 
-Several gaps made it harder to deliver compelling, holistic test automation evaluations:
+The challenge that motivated creation of this repo is that many testing demo setups are intended to showcase isolated capabilities: an API test here, a UI test there, a manual test writeup stored separately in some "team docs repo". If automation code is provided, it's up to the adopter to bridge the gap from CLI to CI pluggability... These gaps between "feature demos" and "what our practice would look like" can stall evaluation progress and value realization (**not to mention consume way too many SE cycles that could be spent engaging with customers**).
 
-- **No end-to-end reference.** Demos typically showcased individual capabilities in isolation. Prospects couldn't see how API tests, UI tests, reporting and CI fit together in a single, working project.
-- **Root cause analysis wasn't demonstrated.** When tests fail (and they will), the ability to quickly diagnose *why* is critical. Without an RCA walkthrough, prospects couldn't evaluate the debugging experience.
-- **Manual testers were left out.** Many prospect teams include manual testers transitioning to automation. Without manual test documentation alongside automated tests, demos didn't speak to this audience.
+Several gaps make it harder to conduct compelling, holistic testing solution evaluations:
+
+- **No end-to-end reference.** Demos, by design typically showcase individual capabilities in isolation. It's *really* helpful see how API tests, UI tests, reporting, local execution and CI fit together in a single, working project.
+- **Root cause analysis (RCA) is under-represented.** When tests fail (and they will), the ability to quickly diagnose *why* is critical. It may be more valuable to demonstrate how a testing solution facilates RCA than it is show how to run tests! 
+- **The relationship and comparative utility of manual tests is often left out.** Many teams include manual testers, many of whom are transitioning to automation. Without manual tests that can be clearly related to automated tests, transitioning teams are left to go elsewhere for assistance in making this connection.
 
 ---
 
 ## Technical Solution
 
-I built a multi-service test automation framework targeting the Restful-Booker Platform — a Docker-based hotel booking application with REST APIs and a web UI — that demonstrates the full testing stack in a single project.
+This repo provides automated and manual test scripts to facilitate exploration and demonstration of all of the above types and emphases of tests. The tests target a multi-service hotel booking system that is deployed via Docker and Docker Compose. Automated and manual tests are provided that target the UI as well as APIs of the booking system.
 
 **Architecture:**
 
@@ -34,9 +34,9 @@ I built a multi-service test automation framework targeting the Restful-Booker P
 - **API test layer:** RestAssured + TestNG covering authentication (cookie-based auth tokens) and booking CRUD operations (create, read, delete)
 - **UI test layer:** Selenium WebDriver + TestNG covering admin login, homepage validation, end-to-end booking flow and contact form submission
 - **Reporting:** Allure Report integration providing dashboards, step-level detail, screenshot attachments and historical trend tracking
-- **CI/CD:** GitHub Actions pipeline that starts the SUT, runs all tests, executes the RCA demo and uploads the Allure report as a downloadable artifact
+- **CI/CD:** GitHub Actions pipeline that starts the SUT, runs all tests, executes the RCA demo and uploads an Allure report as a downloadable artifact
 
-**Test Organization:**
+**Automated Tests:**
 
 | Suite | Tests | Coverage |
 |-------|-------|----------|
@@ -47,7 +47,7 @@ I built a multi-service test automation framework targeting the Restful-Booker P
 
 **RCA Demo:**
 
-Two tests are intentionally designed to fail — one API test asserting the wrong status code, one UI test asserting the wrong page title. Both are *test defects, not system defects*. This distinction is the teaching point: the RCA demo walks through how to use Allure's dashboard to identify, classify and document failures — a skill that prospects need and rarely see demonstrated.
+Two tests are intentionally designed to fail — one API test asserting the wrong status code, one UI test asserting the wrong page title. Both are *test defects, not system defects*. This distinction is the teaching point: the RCA demo walks through how to use Allure's dashboard to identify, classify and document failures.
 
 **Manual Test Tutorial:**
 
@@ -55,10 +55,10 @@ Three step-by-step manual test scenarios with Selenium-captured reference screen
 
 **Key Decisions:**
 
-- **Multi-service SUT.** Using a Docker-based application with REST APIs and a web UI (rather than mock endpoints) ensures the demo reflects real-world testing complexity. Prospects see tests running against actual services.
-- **Allure as the reporting layer.** Allure provides the kind of professional, interactive reporting that engineering managers and QA leads expect. Step-level detail, screenshot attachments and dashboard views make test results accessible to both technical and non-technical stakeholders.
-- **Intentional failures for RCA.** Including tests that are *designed to fail* is a deliberate teaching tool. It demonstrates that test failure investigation is a first-class concern, not an afterthought.
-- **Manual + automated side by side.** Including manual test scenarios alongside their automated equivalents speaks to teams in transition and demonstrates the automation value proposition concretely.
+- **Multi-service SUT.** Testing against a multi-service application with REST APIs and a web UI (rather than mock endpoints) provides insight to real-world testing complexity. Since the SUT is deployable via Docker / Docker Compose, the Quality Engineer can focus on testing.
+- **Allure as the reporting layer.** Allure provides clear, interactive reporting that is expected by Quality Engineers and Managers, and is readily related to other testing / quality solutions. Step-level detail, screenshot attachments and dashboard views make test results accessible to both technical and non-technical stakeholders.
+- **Intentional failures for RCA.** Tests that are *designed to fail* are included as a deliberate teaching tool. It demonstrates that test failure investigation is a first-class concern, not an afterthought.
+- **Manual + automated, side by side.** Including manual test scenarios alongside their automated equivalents speaks to teams in transition and tangeably demonstrates the automation value proposition.
 
 **Repo:** [test-automation-demo](https://github.com/ddreakford/test-automation-demo)
 
@@ -77,24 +77,24 @@ Three step-by-step manual test scenarios with Selenium-captured reference screen
 - Google Chrome (browser automation)
 
 **Documentation:**
-- Setup Guide with full architecture walkthrough, source code explanation, Allure report guide and RCA demo instructions
+- Setup Guide with full architecture walkthrough, test code explanation, Allure report guide and RCA demo instructions
 - Manual Test Tutorial with step-by-step scenarios and reference screenshots
 - DOCX conversion script for sharing documentation with non-technical stakeholders
 
 **Making it accessible:**
-- Single `git clone --recurse-submodules` followed by `docker compose up` and `./gradlew clean test` gets the full environment running
+- To get the full environment up and running, `git clone --recurse-submodules`, followed by `docker compose up` and `./gradlew clean test`
 - JDK setup guidance for macOS, Linux and Windows with multiple configuration options
-- Clear separation between the main test suite (23 passing tests) and the RCA demo (intentional failures) so they don't interfere with each other
+- Clear separation between the main automated test suite (23 passing tests) and the RCA demo suite (which results in intentional failures) so they don't interfere with each other
 
 ---
 
-## Business Impact
+## Business Impact (from SE perspective)
 
-- **End-to-end reference implementation for evaluations.** SEs can walk prospects through a complete, working test automation project that covers API, UI, reporting and CI — showing how the pieces fit together rather than describing them in isolation.
-- **Professional reporting demonstrates maturity.** Allure dashboards with step-level detail, screenshots and trend tracking show prospects what test reporting looks like in a mature practice — a significant step up from console output or basic pass/fail summaries.
-- **RCA demo addresses a real prospect concern.** Walking through root cause analysis on intentional failures demonstrates the debugging experience — something prospects care deeply about but rarely see in evaluations.
+- **End-to-end reference implementation for evaluations.** A complete, working test automation project that covers API, UI, reporting and CI integration shows how these aspects fit together. This is big improvement over describing them in isolation.
+- **Professional reporting helps to communicate the practical value.** Allure dashboards with use case / scenario grouping, step-level detail, screenshots and trend tracking are indicative of test reporting in a mature practice.
+- **RCA demo addresses a real prospect concern.** Walking through root cause analysis on intentional failures demonstrates something prospects care deeply about but often don't see in evaluations.
 - **Manual test documentation enables multi-audience engagement.** Including manual test scenarios alongside automated tests speaks to manual testers in transition, QA leads evaluating automation strategy and engineering managers assessing team readiness.
-- **CI pipeline shows production readiness.** The GitHub Actions integration demonstrates that automated testing isn't just a local development activity — it's part of the delivery pipeline. This addresses questions about CI/CD integration that arise in nearly every evaluation.
+- **CI pipeline shows production readiness.** The GitHub Actions integration demonstrates the inclusion of automated testing in the delivery pipeline. This addresses questions about CI/CD integration that are raised in even the earliest conversations.
 
 ---
 
