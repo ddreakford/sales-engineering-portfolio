@@ -60,7 +60,7 @@ Three step-by-step manual test scenarios with Selenium-captured reference screen
 - **Intentional failures for RCA.** Tests that are *designed to fail* are included as a deliberate teaching tool. It demonstrates that test failure investigation is a first-class concern, not an afterthought.
 - **Manual + automated, side by side.** Including manual test scenarios alongside their automated equivalents speaks to teams in transition and tangeably demonstrates the automation value proposition.
 
-**Repo:** [test-automation-demo](https://github.com/ddreakford/test-automation-demo)
+**Repo:** [multi-test-type-demo](https://github.com/ddreakford/multi-test-type-demo)
 
 ---
 

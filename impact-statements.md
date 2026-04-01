@@ -54,7 +54,7 @@ providing a reusable, multi-platform (Android/iOS) test automation client framew
 
 ---
 
-## test-automation-demo
+## multi-test-type-demo
 
 ### End-to-End Reference Implementation
 

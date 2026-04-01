@@ -44,7 +44,7 @@ A reusable, containerized testing environment to simplify running tests on mobil
 ---
 
 ### Multi Test Type Demo Sandbox
-**Repo:** [test-automation-demo](https://github.com/ddreakford/test-automation-demo) · [Setup Guide](https://github.com/ddreakford/test-automation-demo/blob/main/docs/TestAutomationDemo_SetupGuide.md) · [Technical README](https://github.com/ddreakford/test-automation-demo/blob/main/README.md)
+**Repo:** [multi-test-type-demo](https://github.com/ddreakford/multi-test-type-demo) · [Setup Guide](https://github.com/ddreakford/multi-test-type-demo/blob/main/docs/TestAutomationDemo_SetupGuide.md) · [Technical README](https://github.com/ddreakford/multi-test-type-demo/blob/main/README.md)
 
 Automated and manual tests targeting a hotel booking system. Automated and manual tests are included to validate the target system UI and API. Consumable reporting is provided via Allure Framework. Instructions and examples are provided for local setup as well plugging the automated tests into a CI pipeline.
 
@@ -56,7 +56,7 @@ Automated and manual tests targeting a hotel booking system. Automated and manua
 
 **SE Impact:** Provides a ready-made, end-to-end reference implementation to explore and  demonstrate multiple types and aspects of testing, including API contract validation, UI regression, manual testing, reporting and CI integration — in a cloneable, containerized setup.
 
-**Case Study:** [Multi Test Type Demo Sandbox](case-studies/test-automation-demo-impact.md)
+**Case Study:** [Multi Test Type Demo Sandbox](case-studies/multi-test-type-demo-impact.md)
 
 **Tech:** Java, Gradle, RestAssured, Selenium WebDriver, TestNG, Allure Report, Docker, GitHub Actions
 
@@ -115,7 +115,7 @@ sales-engineering-portfolio/
 ├── README.md                  ← You are here
 ├── case-studies/
 │   ├── testing-environment-impact.md
-│   ├── test-automation-demo-impact.md
+│   ├── multi-test-type-demo-impact.md
 │   ├── security-assessment-framework.md
 │   └── template.md
 ├── artifacts/
