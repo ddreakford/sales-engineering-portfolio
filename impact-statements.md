@@ -54,6 +54,28 @@ providing a reusable, multi-platform (Android/iOS) test automation client framew
 
 ---
 
+## test-automation-demo
+
+### End-to-End Reference Implementation
+
+- **Built a "multi test type" example (API + UI + reporting + CI)** to run tests against a Docker-based, multi-service application **to provide a concrete, walkthrough-ready reference implementation** 
+- **Demonstrated testing pyramid coverage in a single project** — API contract validation (RestAssured), UI regression (Selenium WebDriver), professional reporting (Allure) and CI/CD (GitHub Actions) — enabling prospects to see how the pieces fit together rather than evaluating capabilities in isolation
+- **Included 23 automated tests** organized across auth, CRUD, admin login and full regression suites, plus a manual test tutorial with reference screenshots, **to address both automated and manual testing audiences**
+
+### Root Cause Analysis & Reporting
+
+- **Designed an RCA demo with intentional test failures** to teach root cause analysis methodology using Allure dashboards, **addressing a prospect concern that most evaluations leave open** — what happens when tests fail?
+- **Integrated Allure Report** with step-level detail, screenshot attachments and dashboard views **to demonstrate the professional reporting** that engineering managers and QA leads expect from a mature test automation practice
+- **Provided GitHub Actions CI pipeline** that runs the full suite, executes the RCA demo and uploads the Allure report as a downloadable artifact, **demonstrating that automated testing is part of the delivery pipeline**, not just a local development activity
+
+### Multi-Audience Engagement
+
+- **Created manual test scenarios alongside automated equivalents** with Selenium-captured reference screenshots, **enabling conversations with manual testers in transition** and QA leads evaluating automation strategy
+- **Provided comprehensive documentation** (setup guide, manual test tutorial, DOCX export) **so prospects can share materials internally**, extending the evaluation's reach within the buying committee
+- **Used a realistic multi-service SUT** (Docker-based hotel booking application) rather than mock endpoints, **ensuring the demo reflects real-world testing complexity** and builds prospect confidence
+
+---
+
 ## Cross-Project Themes
 
 Regarding SE approach and philosophy:

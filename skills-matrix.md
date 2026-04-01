@@ -14,6 +14,10 @@ Mapping technical and business skills to the projects and outcomes that demonstr
 | **Java** | Advanced | TestNG test suites, Gradle build configuration, utility classes, API integrations | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
 | **Python** | Advanced | automation scripts, assessment tooling, AI-assisted workflows, pytest runner option | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples), [Security Assessment Framework](https://github.com/ddreakford/mobile-app-assessment) |
 | **Mobile Application Security** | Advanced | OWASP MASVS v2.0 assessment methodology, CVSS v3.1 scoring, decompilation & static analysis | [Security Assessment Framework](https://github.com/ddreakford/mobile-app-assessment) |
+| **API Testing (RestAssured)** | Advanced | Cookie-based auth, CRUD operations, request/response validation against live multi-service application | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
+| **UI Testing (Selenium WebDriver)** | Advanced | Browser-based testing, admin login, full regression suite (homepage, booking flow, contact form), screenshot capture | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
+| **Test Reporting (Allure)** | Advanced | Dashboard configuration, step-level reporting, screenshot attachments, historical trend tracking, RCA methodology | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
+| **GitHub Actions CI/CD** | Intermediate | Multi-step pipeline: SUT startup, test execution, RCA demo, artifact upload | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
 | **Accessibility Testing** | Intermediate | axe DevTools integration, WCAG compliance scanning within functional test scenarios | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
 | **Performance Testing** | Intermediate | CPU, battery, memory and network instrumentation integrated with functional scenarios | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
 | **CI/CD Integration** | Intermediate | Containerized / pluggable, environment variable driven test configuration | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
@@ -34,6 +38,9 @@ Mapping technical and business skills to the projects and outcomes that demonstr
 | **Remediation Roadmap Development** | Three-phase approach (emergency / short-term / long-term) aligns recommendations with business timelines | [Security Assessment Framework](https://github.com/ddreakford/mobile-app-assessment) |
 | **SE Onboarding & Enablement** | Tutorials, architecture documentation and containerized environments enable new SEs to deliver demos within hours | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
 | **Cross-Functional Collaboration** | Partnered with Product and Customer Success to identify high-impact demo scenarios based on competitive positioning and customer pain points | [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
+| **Reference Implementation Development** | End-to-end test automation project (API + UI + reporting + CI) as a walkthrough asset for prospect evaluations | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
+| **Root Cause Analysis Enablement** | Intentional failure demo with Allure dashboard walkthrough for teaching RCA methodology | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
+| **Manual-to-Automated Transition** | Side-by-side manual test scenarios and automated equivalents with reference screenshots | [Test Automation Demo](https://github.com/ddreakford/test-automation-demo) |
 | **Community Contribution** | Open-sourced reusable frameworks to accelerate adoption across the SE team and customer community | [Security Assessment Framework](https://github.com/ddreakford/mobile-app-assessment), [Containerized Appium Testing](https://github.com/ddreakford/CommunityCode-AppiumCodeExamples) |
 
 ---
@@ -45,6 +52,7 @@ Mapping technical and business skills to the projects and outcomes that demonstr
 | Building reusable demo infrastructure | Containerized Appium framework with 30+ scenarios, parallel execution and integrated quality scans | Reduced POC setup from days to hours; enabled consistent, multi-persona demos in competitive evaluations |
 | Codifying security assessment methodology | OWASP MASVS v2.0 assessment toolkit with AI-assisted workflows, CVSS scoring and professional reporting | Enabled non-SME SEs to conduct credible security assessments; opened conversations with CISOs and security teams |
 | Designing for team-wide reuse | Modular architecture, evaluation tutorials, containerized environments | New SEs delivering demos within hours; framework extensible without deep implementation knowledge |
+| Building end-to-end reference implementations | Full-stack test automation (RestAssured + Selenium + Allure + GitHub Actions) against Docker-based multi-service application | Concrete walkthrough asset for evaluations; demonstrates test automation maturity across the testing pyramid |
 | Integrating emerging technology | AI-assisted security analysis with Claude Code; prompt engineering for assessment workflows, utility and test development, report generation, stakeholder communication | Conducted assessments in a fraction of the time while maintaining comprehensive OWASP MASVS coverage |
 
 ---

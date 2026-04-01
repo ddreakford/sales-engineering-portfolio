@@ -43,6 +43,25 @@ A reusable, containerized testing environment to simplify running tests on mobil
 
 ---
 
+### Multi Test Type Demo
+**Repo:** [test-automation-demo](https://github.com/ddreakford/test-automation-demo) · [Setup Guide](https://github.com/ddreakford/test-automation-demo/blob/main/docs/TestAutomationDemo_SetupGuide.md) · [Technical README](https://github.com/ddreakford/test-automation-demo/blob/main/README.md)
+
+Automated and manual tests targeting a Docker-based hotel booking platform, demonstrating how a mature test automation practice covers the full testing stack — API, UI, reporting and CI — in a single, reproducible project.
+
+- **23 automated tests** spanning API (RestAssured) and UI (Selenium WebDriver) layers, organized into auth, CRUD, regression and admin login suites
+- **Allure reporting** with rich dashboards, step-level detail and historical trend tracking
+- **Root cause analysis demo** — two intentional test failures illustrate RCA methodology using the Allure dashboard
+- **Manual test tutorial** with step-by-step scenarios and Selenium-captured reference screenshots for manual testers
+- **GitHub Actions CI pipeline** — every push runs the full suite, executes the RCA demo and uploads the Allure report as a downloadable artifact
+
+**SE Impact:** Provides a ready-made, end-to-end reference implementation that demonstrates test automation maturity across the testing pyramid. Including API contract validation, UI regression, professional reporting and CI integration — in a single walkthrough.
+
+**Case Study:** [Test Automation Demo Impact](case-studies/test-automation-demo-impact.md)
+
+**Tech:** Java, Gradle, RestAssured, Selenium WebDriver, TestNG, Allure Report, Docker, Docker Compose, GitHub Actions
+
+---
+
 ### Mobile Application Security Assessment Framework
 **Repo:** `mobile-app-assessment` [***unavailable / removed***]
 
@@ -66,7 +85,7 @@ A toolkit to conduct mobile security assessments aligned to OWASP MASVS v2.0. Bu
 
 I approach every technical investment through a lense of sales impact and force multiplication:
 
-- **How will this facilitate selling conversations?** *Security assessment opened doors* with CISOs, security teams and developers. *Containerized testing environment highlighted the power and practical utility* of an enterprise grade, hosted test lab.
+- **How will this facilitate selling conversations?** *Security assessment opened doors* with CISOs, security teams and developers. *Containerized testing environment highlighted the power and practical utility* of an enterprise grade, hosted test lab. *Full-stack test automation demo provides a concrete reference implementation* that shows prospects what mature test automation looks like across the testing pyramid.
 - **Will this shorten deal cycles?** If SEs spend less time on setup and more time on the customer conversation, deal velocity can be increased. The more expertise and best practice can be codified, the less bottlenecks we'll experience in scheduling and getting back to customers.
 - **Will this improve win rates?** Full featured, use case oriented  demos and low-friction evaluations make a measurable difference.
 - **Will this scale beyond me?** Community code, tutorials and containerized environments enable other SEs to benefit without needing to understand every implementation detail.
@@ -79,9 +98,10 @@ A detailed mapping of technical and business skills to the projects that demonst
 
 | Domain | Capabilities |
 |--------|-------------|
-| **Test Automation** | Appium 2.0+, TestNG, pytest, parallel execution, self-healing, accessibility (axe DevTools), performance instrumentation |
+| **Test Automation** | Appium 2.0+, Selenium WebDriver, RestAssured, TestNG, pytest, parallel execution, self-healing, accessibility (axe DevTools), performance instrumentation |
 | **Mobile Security** | OWASP MASVS v2.0, CVSS v3.1, decompilation & static analysis, vulnerability identification, remediation roadmaps |
-| **Infrastructure** | Docker, Docker Compose, CI/CD pipelines, containerized test environments |
+| **Infrastructure** | Docker, Docker Compose, GitHub Actions CI/CD, containerized test environments |
+| **Test Reporting & RCA** | Allure Report dashboards, root cause analysis methodology, manual-to-automated test documentation |
 | **Languages** | Java, Python, Bash, Gradle |
 | **Sales Engineering** | POC/POT planning & delivery, multi-persona engagement, competitive differentiation, technical discovery, stakeholder communication |
 | **Leadership** | Framework design for team reuse, SE onboarding, community code contribution, cross-functional collaboration (Product, CS, Sales) |
@@ -95,6 +115,7 @@ sales-engineering-portfolio/
 ├── README.md                  ← You are here
 ├── case-studies/
 │   ├── testing-environment-impact.md
+│   ├── test-automation-demo-impact.md
 │   ├── security-assessment-framework.md
 │   └── template.md
 ├── artifacts/
