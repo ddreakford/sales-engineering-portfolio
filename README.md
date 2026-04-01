@@ -85,7 +85,7 @@ A toolkit to conduct mobile security assessments aligned to OWASP MASVS v2.0. Bu
 
 I approach every technical investment through a lense of sales impact and force multiplication:
 
-- **How will this facilitate selling conversations?** *Security assessment opened doors* with CISOs, security teams and developers. *Containerized testing environment highlighted the power and practical utility* of an enterprise grade, hosted test lab. *Full-stack test automation demo provides a concrete reference implementation* that shows prospects what mature test automation looks like across the testing pyramid.
+- **How will this facilitate selling conversations?** *Security assessment opened doors* with CISOs, security teams and developers. *Containerized testing environment highlighted the power and practical utility* of an enterprise grade, hosted test lab. *Multi test type demo sandbox provides a concrete reference implementation* that shows how various test types and focuses can be used in combination as part of a mature testing practice.
 - **Will this shorten deal cycles?** If SEs spend less time on setup and more time on the customer conversation, deal velocity can be increased. The more expertise and best practice can be codified, the less bottlenecks we'll experience in scheduling and getting back to customers.
 - **Will this improve win rates?** Full featured, use case oriented  demos and low-friction evaluations make a measurable difference.
 - **Will this scale beyond me?** Community code, tutorials and containerized environments enable other SEs to benefit without needing to understand every implementation detail.
